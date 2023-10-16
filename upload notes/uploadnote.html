@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload notes</title>
+    <link rel="stylesheet" href="uploadnote.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="logo.jpg" alt=""></a>     
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../view notes/viewnote.html" class="nav-link">view notes</a></li>
+                <li><a href="../upload notes/uploadnote.html" class="nav-link">upload notes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+        <form action="post" id="form">
+            <h1>Upload Notes</h1>
+
+            <div class="input-control">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" autocomplete="off">
+                <div class="error title"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description" autocomplete="off">
+                <div class="error description"></div>
+            </div>
+
+            
+
+            <input type="file" value="Upload note">
+        </form>
+    </div>
+</body>
+</html>

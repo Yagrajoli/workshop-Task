@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="..//index.html"><img src="logo.jpg" alt=""></a>     
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../view notes/viewnote.html" class="nav-link">view notes</a></li>
+                <li><a href="../upload notes/uploadnote.html" class="nav-link">upload notes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <form action="#" id="form" onsubmit="return validation()">
+            <h1>Registration</h1>
+
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" autocomplete="off">
+                <div class="error username"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" autocomplete="off">
+                <div class="error email"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" autocomplete="off">
+                <div class="error password"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="password">Password Again</label>
+                <input type="password" id="password2" name="password2" autocomplete="off">
+                <div class="error password2"></div>
+            </div>
+
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
